@@ -1,0 +1,3230 @@
+<!DOCTYPE html><html><head>
+
+	<title>Applibrary.org - Download Apps and Games</title>
+	<meta name="description" content="Applibrary is a leading third party app store with over 370,000+ unique monthly visitors.">	
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="/head/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/head/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capabdale" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="#2196f3">
+	<meta name="keywords" content="app library,applibrary,applibrary.org">
+	<link rel="stylesheet" href="css/framework7.min.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/app.css">
+	<style type="text/css">
+.sideloadIcon {
+     -webkit-animation: breathing 3s ease-out infinite normal;
+     animation: breathing 3s ease-out infinite normal;
+}
+ @-webkit-keyframes breathing {
+     0% {
+         -webkit-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+     25% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+    }
+     60% {
+         -webkit-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+     100% {
+         -webkit-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+}
+ @keyframes breathing {
+     0% {
+         -webkit-transform: scale(0.9);
+         -ms-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+     25% {
+         -webkit-transform: scale(1);
+         -ms-transform: scale(1);
+         transform: scale(1);
+    }
+     60% {
+         -webkit-transform: scale(0.9);
+         -ms-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+     100% {
+         -webkit-transform: scale(0.9);
+         -ms-transform: scale(0.9);
+         transform: scale(0.9);
+    }
+}
+/*.cover {
+     z-index: 900;
+     background: #1d1d27;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     animation: fade-out 3s;
+}
+ .cover #icon {
+     --size: 100px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: var(--size);
+     animation: zoom-in 1.5s;
+     animation-delay: 1.5s;
+}
+*/
+ @keyframes zoom-in {
+     50% {
+         width: var(--size);
+    }
+     60% {
+         width: calc(var(--size) * 0.9);
+    }
+     100% {
+         width: 250%;
+    }
+}
+ @keyframes fade-out {
+     0%, 85% {
+         opacity: 1;
+    }
+     100% {
+         opacity: 0;
+    }
+}
+ .content {
+     width: 100%;
+}
+ ul {
+     position: absolute;
+}
+ .anim {
+     -webkit-animation-delay: 2.5s !important;
+     animation-delay: 2.5s !important;
+}
+ .app-info, .download-text, .locker-link, .required-text {
+     display: none;
+}
+ li {
+     position: relative;
+     display: block;
+     margin-bottom: 5px;
+    /*-webkit-animation: fadeIn 0.5s linear;
+     animation: fadeIn 0.5s linear;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+    */
+}
+/*@-webkit-keyframes fadeIn {
+     0% {
+         opacity: 0;
+         top: 100px;
+    }
+     75% {
+         opacity: 0.5;
+         top: 0px;
+    }
+     100% {
+         opacity: 1;
+    }
+}
+*/
+ .md .list .item-footer {
+     color: #fff;
+}
+ .bookIcon {
+    /*-webkit-animation: breathing 4s ease-out infinite normal;
+    */
+    /*animation: breathing 4s ease-out infinite normal;
+    */
+}
+ .appText {
+     margin-top: 10px;
+     animation: move 2s linear infinite;
+     background-image: linear-gradient(to right, #fe8a71, #f6cd61, #3da4ab, #0e9aa7, #fe8a71);
+     background-size: 200% auto;
+     font-size: 40px;
+     font-weight: 700;
+     letter-spacing: 1px;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+ @keyframes move {
+     to {
+         background-position: 200% center;
+    }
+}
+	</style>
+</head>
+<body class="theme-dark">
+	<div id="app">
+		<div class="statusbar"></div>
+		<div class="views tabs ios-edges">
+			<div id="view-home" class="view view-main tab tab-active">
+				<div class="page" data-name="home">
+					<div class="searchbar-backdrop"></div>
+					<div class="page-content" style="background-color: #1d1d27">
+						<div class="block">
+							<center>
+								<img src="images/book.svg" width="60px" class="bookIcon">
+								<h1 class="appText" style="
+									margin-top: 10px;
+									animation: move 2s linear infinite;
+									background-image: linear-gradient(to right, #fe8a71, #f6cd61, #3da4ab, #0e9aa7, #fe8a71);
+									background-size: 200% auto;
+									font-size: 40px;
+									font-weight: 700;
+									letter-spacing: 1px;
+									-webkit-background-clip: text;
+									-webkit-text-fill-color: transparent;">
+									Applibrary
+								</h1>
+							</center>
+						</div>
+						<form class="searchbar" style="background-color: #1d1d27;">
+							<div class="searchbar-inner" style="padding: 0 8px;">
+								<div class="searchbar-input-wrap" style="height: 32px;">
+									<input type="search" placeholder="Search" class="" style="background-color: #15151e; color: #fff;">
+									<i class="searchbar-icon" style="
+										width: 13px;
+										height: 13px;
+										position: absolute;
+										top: 50%;
+										margin-top: -6px;
+										background-size: 13px 13px;
+										z-index: 40;
+										left: 8px;
+										">
+									</i>
+									<span class="input-clear-button"></span>
+								</div>
+								<span class="searchbar-disable-button" style="color: rgb(255, 255, 255);display: block;margin-right: 0px;pointer-events: auto;opacity: 1;margin-left: 8px;">Cancel</span>
+							</div>
+						</form>
+						<div class="list" style="margin:0!important;">
+							<ul id="app_list">
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/8ballpoolmod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://bigappboi.com/cl/i/42jjp1</span>
+												<div class="item-header developer-name">Miniclip.com</div>
+												<span class="app-name">8 Ball Pool Mod</span>
+												<span class="app-info">8 Ball Pool Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download 8 Ball Pool Mod with unlimited coins, extended line and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ablocoins.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/rle1k</span>
+												<div class="item-header developer-name">Massive Media</div>
+												<span class="app-name">Ablo Unlimited Coins Mod</span>
+												<span class="app-info">Ablo Unlimited Coins Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Ablo Mod with unlimited coins, screenrecord and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amandatheadventurer.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/vognvm</span>
+												<div class="item-header developer-name">jpgamedesign</div>
+												<span class="app-name">Amanda the Adventurer Mobile</span>
+												<span class="app-info">Amanda the Adventurer</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Amanda the Adventurer mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amazon.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/428r71</span>
+												<div class="item-header developer-name">AMZN Mobile LLC</div>
+												<span class="app-name">Amazon With $150 Coupon</span>
+												<span class="app-info">Amazon</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Amazon with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amongusapplibrary.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/om97n</span>
+												<div class="item-header developer-name">Applibrary _dev</div>
+												<span class="app-name">Among Us Applibrary</span>
+												<span class="app-info">Among Us Applibrary</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Among Us Mod by Applibrary with crewmate vent, wall hack and other features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amonguscontroller.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/wopd7v</span>
+												<div class="item-header developer-name">InnerSloth</div>
+												<span class="app-name">Among Us Controller Support</span>
+												<span class="app-info">Among Us Controller Support</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Among Us Controller Support app. Enables support for Playstation, Xbox and other bluetooth controllers.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amongusmod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1r1md</span>
+												<div class="item-header developer-name">InnerSloth</div>
+												<span class="app-name">Among Us Mod</span>
+												<span class="app-info">Among Us Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Among Us Mod with speed hack, free skins and other features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amonguspets.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/x7gdv</span>
+												<div class="item-header developer-name">InnerSloth</div>
+												<span class="app-name">Among Us Pets</span>
+												<span class="app-info">Among Us Pets</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Among Us with pets, skins and hats unlocked for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/amongusairship.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/vkm92</span>
+												<div class="item-header developer-name">InnerSloth</div>
+												<span class="app-name">Among Us With Airship Map</span>
+												<span class="app-info">Among Us Airship</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Among Us with airship map, pets, skins and hats unlocked for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/applearcade.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/42qvkj</span>
+												<div class="item-header developer-name">Apple Inc.</div>
+												<span class="app-name">Apple Arcade</span>
+												<span class="app-info">Apple Arcade</span>
+												<span class="required-text">Free Membership</span>
+												<span class="download-text">Enabling Premium Plan</span>
+												<div class="item-footer description">Click to active Apple Arcade Premium membership on your device for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/applemusic.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o669k4</span>
+												<div class="item-header developer-name">Apple Inc.</div>
+												<span class="app-name">Apple Music</span>
+												<span class="app-info">Apple Music</span>
+												<span class="required-text">Free Membership</span>
+												<span class="download-text">Enabling Premium Plan</span>
+												<div class="item-footer description">Click to active Apple Music Premium membership on your device for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/arceusx.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/5k61k6</span>
+												<div class="item-header developer-name">SPDM Team</div>
+												<span class="app-name">Arceus X</span>
+												<span class="app-info">Arceus X</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Arceus X the most powerful and easy to use mod menu/exploit.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/autoclicker.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndpk7k</span>
+												<div class="item-header developer-name">Applibrary _dev</div>
+												<span class="app-name">Auto Clicker</span>
+												<span class="app-info">Auto Clicker</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Auto Clicker for iOS and Android devices. No root/jailbreak required.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/baseball9.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/1o83nk</span>
+												<div class="item-header developer-name">playus soft</div>
+												<span class="app-name">BASEBALL 9 Mod</span>
+												<span class="app-info">BASEBALL 9</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download BASEBALL 9 Mod with unlimited coins, stamina, gems and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/beamngdrivemobile.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/376lw6</span>
+												<div class="item-header developer-name">BeamNG</div>
+												<span class="app-name">BeamNG.drive Mobile</span>
+												<span class="app-info">BeamNG.drive Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download BeamNG.drive mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/bitlifemod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/po1nnl</span>
+												<div class="item-header developer-name">Candywriter, LLC</div>
+												<span class="app-name">BitLife - Life Simulator Mod</span>
+												<span class="app-info">BitLife - Life Simulator Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download BitLife - Life Simulator Mod with unlimited money and premium for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/blockmango.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2rqkl</span>
+												<div class="item-header developer-name">Zhuhai Sandbox Network Technology Co.</div>
+												<span class="app-name">Blockman Go Mod</span>
+												<span class="app-info">Blockman Go Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Blockman Go Mod with fly hack, wall hack, speed hack, unlimited gcubes, money and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/bloonstd6.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/rl8md</span>
+												<div class="item-header developer-name">Ninja Kiwi</div>
+												<span class="app-name">Bloons TD 6</span>
+												<span class="app-info">Bloons TD 6</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Bloons TD 6 for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/coldwar.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/88enr</span>
+												<div class="item-header developer-name">Activision</div>
+												<span class="app-name">Call of Duty: Black Ops Cold War</span>
+												<span class="app-info">CoD: Cold War</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download CoD: Cold War mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/carparkingmultiplayermod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6r23q</span>
+												<div class="item-header developer-name">Aidana Kengbeiil</div>
+												<span class="app-name">Car Parking Multiplayer Mod</span>
+												<span class="app-info">Car Parking Multiplayer Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Car Parking Multiplayer Mod with unlimited money.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/carxstreet.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6r21q</span>
+												<div class="item-header developer-name">CarX Technologies</div>
+												<span class="app-name">CarX Street</span>
+												<span class="app-info">CarX Street</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download CarX Street for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/cercube.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/mqm88</span>
+												<div class="item-header developer-name">Cercube</div>
+												<span class="app-name">Cercube for YouTube</span>
+												<span class="app-info">Cercube for YouTube</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Cercube for YouTube.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/chatousappcoins.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/prm43</span>
+												<div class="item-header developer-name">JYUAN TRADING CO., LIMITED</div>
+												<span class="app-name">Chatous: 18+ Unlimited Coins Mod</span>
+												<span class="app-info">Chatous: 18+ Unlimited Coins Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Chatous: 18+ Mod with unlimited coins, screenrecord and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/checkra1n.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/r7kdxl</span>
+												<div class="item-header developer-name">checkra1n</div>
+												<span class="app-name">checkra1n Jailbreak iOS 16</span>
+												<span class="app-info">checkra1n</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Checkra1n is a jailbreak for iOS 16 firmware.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/checkra1n.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6w2o3</span>
+												<div class="item-header developer-name">checkra1n</div>
+												<span class="app-name">checkra1n Jailbreak iOS 15</span>
+												<span class="app-info">checkra1n</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Checkra1n is a jailbreak for iOS 15 firmware.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/checkra1n.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/klv35l</span>
+												<div class="item-header developer-name">checkra1n</div>
+												<span class="app-name">checkra1n Jailbreak iOS 14</span>
+												<span class="app-info">checkra1n</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Checkra1n is a jailbreak for iOS 14 firmware.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/chegg.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/wvm37</span>
+												<div class="item-header developer-name">Chegg, Inc.</div>
+												<span class="app-name">Chegg Study - Homework Help</span>
+												<span class="app-info">Chegg Study</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Chegg with Study Pack unlocked for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/chibimation.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lk5qdd</span>
+												<div class="item-header developer-name">Beowulf</div>
+												<span class="app-name">ChibiMation</span>
+												<span class="app-info">ChibiMation</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download ChibiMation for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/choochoocharles.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2lm1nw</span>
+												<div class="item-header developer-name">Two Star Games</div>
+												<span class="app-name">Choo-Choo Charles Mobile</span>
+												<span class="app-info">Choo-Choo Charles</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Choo-Choo Charles mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/citiesskylines.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lkl13j</span>
+												<div class="item-header developer-name">Paradox Interactive</div>
+												<span class="app-name">Cities: Skylines DLC Code Generator</span>
+												<span class="app-info">Cities: Skylines DLC Code Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Cities: Skylines code generator for base game and DLC.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/clubhouse.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/37o2n</span>
+												<div class="item-header developer-name">Alpha Exploration Co.</div>
+												<span class="app-name">Clubhouse for Android</span>
+												<span class="app-info">Clubhouse</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Clubhouse for android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/clubhouse.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/9veml</span>
+												<div class="item-header developer-name">Alpha Exploration Co.</div>
+												<span class="app-name">Clubhouse With Invitation Code</span>
+												<span class="app-info">Clubhouse</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Clubhouse with invitation code pre-applied.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/coinmasteradder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/po43ql</span>
+												<div class="item-header developer-name">Moon Active</div>
+												<span class="app-name">Coin Master Adder</span>
+												<span class="app-info">Coin Master Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Coin Master Adder to add spins and coins to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/coursehero.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/gp7wd</span>
+												<div class="item-header developer-name">Course Hero, Inc.</div>
+												<span class="app-name">Course Hero Premier Unlocked</span>
+												<span class="app-info">Course Hero Premier Unlocked</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Course Hero with Premier Membership unlocked for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/crabgame.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8dx89k</span>
+												<div class="item-header developer-name">Dani</div>
+												<span class="app-name">Crab Game</span>
+												<span class="app-info">Crab Game</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Crab Game mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/crunchyrollmod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/425gjj</span>
+												<div class="item-header developer-name">Funimation</div>
+												<span class="app-name">Crunchyroll Mod</span>
+												<span class="app-info">Crunchyroll Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Crunchyroll Mod to watch anime for free without Crunchyroll subscribtion.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/cyberpunk2077.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/jo75o</span>
+												<div class="item-header developer-name">CD Projekt</div>
+												<span class="app-name">Cyberpunk 2077</span>
+												<span class="app-info">Cyberpunk 2077</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Cyberpunk 2077 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/delta.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8dngj6</span>
+												<div class="item-header developer-name">rileytestut</div>
+												<span class="app-name">Delta Emulator</span>
+												<span class="app-info">Delta Emulator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Delta Emulator for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/doordash.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/mem5vm</span>
+												<div class="item-header developer-name">DoorDash, Inc.</div>
+												<span class="app-name">DoorDash With $150 Coupon</span>
+												<span class="app-info">DoorDash</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download DoorDash with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/iosdowngrade16to15.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e658ll</span>
+												<span class="app-name">Downgrade iOS 16 to 15</span>
+												<span class="app-info">Downgrader</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Downgrader iOS 16 to 15.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/dynamicisland.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/99d37r</span>
+												<span class="app-name">Dynamic Island</span>
+												<span class="app-info">Dynamic Island</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Dynamic Island for unsupported iOS devices from iPhone 6 to iPhone 14 Plus.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/eldenring.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/994vpl</span>
+												<div class="item-header developer-name">BANDAI NAMCO Entertainment</div>
+												<span class="app-name">Elden Ring Mobile</span>
+												<span class="app-info">Elden Ring Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Elden Ring mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/facebook.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/992jr</span>
+												<div class="item-header developer-name">Facebook, Inc.</div>
+												<span class="app-name">Facebook (DNS hotfixed)</span>
+												<span class="app-info">Facebook</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Facebook that works during the outage. Includes Messenger fix.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/faceplay.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8dnvnj</span>
+												<div class="item-header developer-name">INNOVATIONAL TECHNOLOGIES LIMITED</div>
+												<span class="app-name">FacePlay - AI Art Generator VIP</span>
+												<span class="app-info">FacePlay</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download FacePlay with unlimited coins and all VIP features unlocked for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fallguys.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6xjgq</span>
+												<div class="item-header developer-name">Mediatonic</div>
+												<span class="app-name">Fall Guys: Ultimate Knockout</span>
+												<span class="app-info">Fall Guys: Ultimate Knockout</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Fall Guys: Ultimate Knockout mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/farmingsimulator22.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8ogej</span>
+												<div class="item-header developer-name">GIANTS Software GmbH</div>
+												<span class="app-name">Farming Simulator 22</span>
+												<span class="app-info">Farming Simulator 22</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Farming Simulator 22 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fifa21mobile.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1nxdp</span>
+												<div class="item-header developer-name">Electronic Arts</div>
+												<span class="app-name">FIFA 21</span>
+												<span class="app-info">FIFA 21</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download FIFA 21 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnafsb.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/425mjj</span>
+												<div class="item-header developer-name">Steel Wool Studios</div>
+												<span class="app-name">Five Nights at Freddy's: Security Breach</span>
+												<span class="app-info">FNAF: Security Breach</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download FNAF: Security Breach mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf1.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6d5qq7</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's</span>
+												<span class="app-info">Five Nights at Freddy's</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf2.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6wnnr</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's 2</span>
+												<span class="app-info">Five Nights at Freddy's 2</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's 2 for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf3.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/popww3</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's 3</span>
+												<span class="app-info">Five Nights at Freddy's 3</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's 3 for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf4.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o6p88r</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's 4</span>
+												<span class="app-info">Five Nights at Freddy's 4</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's 4 for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf5.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/mepxx8</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's: SL</span>
+												<span class="app-info">Sister Location</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's: SL for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnaf6.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1o266k</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">FNaF 6: Pizzeria Simulator</span>
+												<span class="app-info">FNaF 6: Pizzeria Simulator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download FNaF 6: Pizzeria Simulator for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fnafgamesbundle6.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndpwwv</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Five Nights at Freddy's 6 Games Bundle</span>
+												<span class="app-info">Five Nights at Freddy's 6 Games Bundle</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Five Nights at Freddy's 6 games for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fortnite.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o64lgn</span>
+												<div class="item-header developer-name">Epic Games</div>
+												<span class="app-name">Fortnite</span>
+												<span class="app-info">Fortnite</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Fortnite mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/frankenrpg.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/nd5k6k</span>
+												<div class="item-header developer-name">splendidland</div>
+												<span class="app-name">Franken RPG</span>
+												<span class="app-info">Franken RPG</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Franken RPG mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/fridaynightfunkin.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2l92q6</span>
+												<div class="item-header developer-name">ninjamuffin99</div>
+												<span class="app-name">Friday Night Funkin</span>
+												<span class="app-info">Friday Night Funkin Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Friday Night Funkin mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaart.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/4219v1</span>
+												<div class="item-header developer-name">bakugou-rima</div>
+												<span class="app-name">Gacha Art</span>
+												<span class="app-info">Gacha Art</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Art for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachanox.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g657v3</span>
+												<div class="item-header developer-name">bunny boi</div>
+												<span class="app-name">Gacha Bunny</span>
+												<span class="app-info">Gacha Bunny</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Bunny for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachacity.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o63d12</span>
+												<div class="item-header developer-name">Lil KiSsEs</div>
+												<span class="app-name">Gacha City</span>
+												<span class="app-info">Gacha City</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha City for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaclubedition.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8d5q26</span>
+												<div class="item-header developer-name">RyoSnow</div>
+												<span class="app-name">Gacha Club Edition</span>
+												<span class="app-info">Gacha Club Edition</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Club Edition for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachadesigner.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/qk97j7</span>
+												<div class="item-header developer-name">Beowulf</div>
+												<span class="app-name">Gacha Designer</span>
+												<span class="app-info">Gacha Designer</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Designer for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachafnaf4.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6d8krm</span>
+												<div class="item-header developer-name">GachaFNaFMod</div>
+												<span class="app-name">Gacha FNaF Mod 4</span>
+												<span class="app-info">Gacha FNaF</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha FNaF Mod 4 for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaheat.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lkp4gg</span>
+												<div class="item-header developer-name">Lunime</div>
+												<span class="app-name">Gacha Heat</span>
+												<span class="app-info">Gacha Heat</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Heat app to watch Gacha Heat 🥵🤤 +13 videos.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachalifemod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/me98kw</span>
+												<div class="item-header developer-name">RyoSnow</div>
+												<span class="app-name">Gacha Life Mod</span>
+												<span class="app-info">Gacha Life Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Life Mod for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachanebula.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6drq9v</span>
+												<div class="item-header developer-name">noxula</div>
+												<span class="app-name">Gacha Nebula BETA</span>
+												<span class="app-info">Gacha Nebula</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Nebula for iOS/Android devices. This is a beta version and you might experience some bugs/crashes.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaneon.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/994opp</span>
+												<div class="item-header developer-name">elena_gachaclub</div>
+												<span class="app-name">Gacha Neon</span>
+												<span class="app-info">Gacha Neon</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Neon for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachanox.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/42146j</span>
+												<div class="item-header developer-name">noxula</div>
+												<span class="app-name">Gacha Nox</span>
+												<span class="app-info">Gacha Nox</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Nox for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachanymph.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o61d82</span>
+												<div class="item-header developer-name">SpaceTea2.0</div>
+												<span class="app-name">Gacha Nymph</span>
+												<span class="app-info">Gacha Nymph</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Nymph for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaplus.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/7dk59k</span>
+												<div class="item-header developer-name">FémLol Stúdió</div>
+												<span class="app-name">Gacha Plus</span>
+												<span class="app-info">Gacha Plus</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Plus for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachapop.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6v252</span>
+												<div class="item-header developer-name">Coffea</div>
+												<span class="app-name">Gacha Pop</span>
+												<span class="app-info">Gacha Pop</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Pop for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gacharedux20.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/99d56l</span>
+												<div class="item-header developer-name">DustLol</div>
+												<span class="app-name">Gacha Redux 2.0</span>
+												<span class="app-info">Gacha Redux 2.0</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Redux 2.0 for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachasnow.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/qk48m5</span>
+												<div class="item-header developer-name">Avuez</div>
+												<span class="app-name">Gacha Snow BETA</span>
+												<span class="app-info">Gacha Snow</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Snow for iOS/Android devices. This is a beta version and you might experience some bugs/crashes.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachastar.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/x67rel</span>
+												<div class="item-header developer-name">[Space_Tea]</div>
+												<span class="app-name">Gacha Star Mobile</span>
+												<span class="app-info">Gacha Star</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Star for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachaworld.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/wo2xem</span>
+												<div class="item-header developer-name">CHYDO</div>
+												<span class="app-name">Gacha World</span>
+												<span class="app-info">Gacha World</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha World for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gachay2k.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/3736jw</span>
+												<div class="item-header developer-name">xmiikax</div>
+												<span class="app-name">Gacha Y2K CONCEPT</span>
+												<span class="app-info">Gacha Y2K</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Gacha Y2K for iOS/Android devices. Mod has all assets from concept trailer. Creator at the moment has no plans to create new assets.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/geforcenow.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/4251qj</span>
+												<div class="item-header developer-name">NVIDIA</div>
+												<span class="app-name">GeForce NOW</span>
+												<span class="app-info">GeForce NOW</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download GeForce NOW for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/genshinimpactcrystalsadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2l67p6</span>
+												<div class="item-header developer-name">COGNOSPHERE PTE. LTD.</div>
+												<span class="app-name">Genshin Impact Adder</span>
+												<span class="app-info">Genshin Impact Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Genshin Impact Adder to add Genesis Crystals to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/geometrydash.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/pvl74</span>
+												<div class="item-header developer-name">RobTop Games AB</div>
+												<span class="app-name">Geometry Dash</span>
+												<span class="app-info">Geometry Dash</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Geometry Dash for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ghostoftsushima.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dvvdmk</span>
+												<div class="item-header developer-name">Sucker Punch Productions</div>
+												<span class="app-name">Ghost of Tsushima</span>
+												<span class="app-info">Ghost of Tsushima</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Ghost of Tsushima mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/googleforms.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dlqeo</span>
+												<div class="item-header developer-name">Google</div>
+												<span class="app-name">Google Forms Answers</span>
+												<span class="app-info">Google Forms Answers</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Google Forms Mod that displays answers to all questions.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/googleplaygames.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2l6qpp</span>
+												<div class="item-header developer-name">Google LLC</div>
+												<span class="app-name">Google Play Games for iOS</span>
+												<span class="app-info">Google Play Games</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Google Play Games for iOS devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/playstore.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6dqx4j</span>
+												<div class="item-header developer-name">Google LLC</div>
+												<span class="app-name">Google Play for iOS</span>
+												<span class="app-info">Play Store</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Google Play for iOS devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/gta6.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/d72ro</span>
+												<div class="item-header developer-name">Rockstar Games</div>
+												<span class="app-name">Grand Theft Auto VI</span>
+												<span class="app-info">GTA VI Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download GTA 6 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/growtopiaautoclicker.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1o2eld</span>
+												<div class="item-header developer-name">Ubisoft</div>
+												<span class="app-name">Growtopia Auto Clicker</span>
+												<span class="app-info">Growtopia Auto Clicker</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Growtopia Auto Clicker for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/grubhub.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6nj8d</span>
+												<div class="item-header developer-name">GrubHub.com</div>
+												<span class="app-name">Grubhub With $150 Coupon</span>
+												<span class="app-info">Grubhub</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Grubhub with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/happymod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6vx32</span>
+												<div class="item-header developer-name">HappyMod</div>
+												<span class="app-name">HappyMod</span>
+												<span class="app-info">HappyMod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download HappyMod for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/helloneighbor2.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/34j86</span>
+												<div class="item-header developer-name">tinyBuild</div>
+												<span class="app-name">Hello Neighbor 2</span>
+												<span class="app-info">Hello Neighbor 2</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Hello Neighbor 2 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/hogwartslegacykeygenerator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6nppq</span>
+												<div class="item-header developer-name">Warner Bros. Games</div>
+												<span class="app-name">Hogwarts Legacy Key Generator</span>
+												<span class="app-info">Hogwarts Legacy Key Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Hogwarts Legacy game key generator.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/hogwartslegacymobile.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1o922p</span>
+												<div class="item-header developer-name">Warner Bros. Games</div>
+												<span class="app-name">Hogwarts Legacy Mobile</span>
+												<span class="app-info">Hogwarts Legacy</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Hogwarts Legacy mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/hola.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/x6x7mg</span>
+												<div class="item-header developer-name">Skylb Inc.</div>
+												<span class="app-name">Hola Unlimited Coins Mod</span>
+												<span class="app-info">Hola Unlimited Coins Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Hola Mod with unlimited coins, screenrecord and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/inshotpro.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/5ke7vw</span>
+												<div class="item-header developer-name">InShot lnc.</div>
+												<span class="app-name">InShot Pro</span>
+												<span class="app-info">InShot Pro</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download InShot Pro with paid transitions, effects, stickers and more for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/infiniteflightsimulator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/5kpew6</span>
+												<div class="item-header developer-name">Infinite Flight LLC</div>
+												<span class="app-name">Infinite Flight Simulator Unlocked</span>
+												<span class="app-info">Infinite Flight Simulator Unlocked</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Infinite Flight Simulator With All-Pro Features Unlocked.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/instagram.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/262pp</span>
+												<div class="item-header developer-name">Instagram, Inc.</div>
+												<span class="app-name">Instagram (DNS hotfixed)</span>
+												<span class="app-info">Instagram</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Instagram that works during the outage.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+											<div class="item-media"><img src="images/internetcafesimulator2.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/5k5qw6</span>
+												<div class="item-header developer-name">Cheesecake Dev</div>
+												<span class="app-name">Internet Cafe Simulator 2 Mobile</span>
+												<span class="app-info">Internet Cafe Simulator 2</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Internet Cafe Simulator 2 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+											<div class="item-media"><img src="images/justactnatural.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6989d</span>
+												<div class="item-header developer-name">Conor Garity</div>
+												<span class="app-name">Just Act Natural</span>
+												<span class="app-info">Just Act Natural Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Just Act Natural mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+											<div class="item-media"><img src="images/legostarwarstheskywalkersaga.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/vo7kk2</span>
+												<div class="item-header developer-name">Warner Bros. Interactive Entertainment</div>
+												<span class="app-name">LEGO Star Wars: The Skywalker Saga</span>
+												<span class="app-info">LEGO Star Wars: The Skywalker Saga Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download LEGO Star Wars: The Skywalker Saga mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/lethalcompany.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/5kv211</span>
+												<div class="item-header developer-name">Zeekerss</div>
+												<span class="app-name">Lethal Company</span>
+												<span class="app-info">Lethal Company</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Lethal Company mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/locationtrack.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g63q42</span>
+												<div class="item-header developer-name">Loc_dev</div>
+												<span class="app-name">Location Tracker: Phone Number</span>
+												<span class="app-info">Location Tracker: Phone Number</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download location tracker that allows you to find GPS location of any turned on phone with a mobile number.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/mico.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/58r9k</span>
+												<div class="item-header developer-name">MICO WORLD</div>
+												<span class="app-name">MICO Unlimited Coins Mod</span>
+												<span class="app-info">MICO Unlimited Coins Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download MICO Mod with unlimited coins, screenrecord and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/minecraftdungeons.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/mwwlm</span>
+												<div class="item-header developer-name">Mojang Studios</div>
+												<span class="app-name">Minecraft Dungeons</span>
+												<span class="app-info">Minecraft Dungeons</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Minecraft Dungeons mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/minecraftjennymod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6dq43m</span>
+												<div class="item-header developer-name">SlipperyTum</div>
+												<span class="app-name">Minecraft PE Mod - Jenny</span>
+												<span class="app-info">Minecraft PE Mod - Jenny</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Jenny mod for Minecraft PE.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/minecraftmobilemodmenu.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndjk19</span>
+												<div class="item-header developer-name">Mojang Studios</div>
+												<span class="app-name">Minecraft PE Mod Menu</span>
+												<span class="app-info">Minecraft Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Minecraft Mod Menu with fly, xray, speed hack and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/minecraftpremiumacc.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1k1nx</span>
+												<div class="item-header developer-name">Mojang Studios</div>
+												<span class="app-name">Minecraft Premium Account Generator</span>
+												<span class="app-info">Minecraft Premium Account Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Minecraft Premium Account Generator.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/minecraftpe.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6d5wlv</span>
+												<div class="item-header developer-name">Mojang</div>
+												<span class="app-name">Minecraft: Pocket Edition</span>
+												<span class="app-info">Minecraft</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Minecraft for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/monopolygoadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/po43o3</span>
+												<div class="item-header developer-name">Scopely, Inc.</div>
+												<span class="app-name">MONOPOLY GO! Adder</span>
+												<span class="app-info">MonopolyGO Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download MONOPOLY GO! Adder to add rolls and money to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/movieboxpro.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/pow7k4</span>
+												<div class="item-header developer-name">MovieBoxPro</div>
+												<span class="app-name">MovieBoxPro</span>
+												<span class="app-info">MovieBoxPro</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download MovieBoxPro for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/muck.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/om2kr</span>
+												<div class="item-header developer-name">Dani</div>
+												<span class="app-name">Muck</span>
+												<span class="app-info">Muck Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Muck mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/multiversusmobile.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/r7wq2v</span>
+												<div class="item-header developer-name">Player First Games</div>
+												<span class="app-name">MultiVersus Mobile</span>
+												<span class="app-info">MultiVersus Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download MultiVersus mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/mysummercar.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/q7397</span>
+												<div class="item-header developer-name">Amistech Games</div>
+												<span class="app-name">My Summer Car</span>
+												<span class="app-info">My Summer Car Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download My Summer Car mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/nba2k21arcadeedition.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/qwpew</span>
+												<div class="item-header developer-name">2K</div>
+												<span class="app-name">NBA 2K21 Arcade Edition</span>
+												<span class="app-info">NBA 2K21 Arcade Edition</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download NBA 2K21 Arcade Edition for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/nba2k21mamba.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/voe51d</span>
+												<div class="item-header developer-name">2K Games</div>
+												<span class="app-name">NBA 2K21 Mamba Forever Edition</span>
+												<span class="app-info">NBA 2K21 Mamba Forever Edition</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download NBA 2K21 Mamba Forever Edition mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/netflixmod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/j666p</span>
+												<div class="item-header developer-name">Netflix, Inc.</div>
+												<span class="app-name">Netflix Mod</span>
+												<span class="app-info">Netflix Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Netflix Mod that lets you watch shows without connecting an account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/nullsbrawl.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/dv1487</span>
+												<div class="item-header developer-name">Null's</div>
+												<span class="app-name">Null's Brawl</span>
+												<span class="app-info">Null's Brawl</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Null's Brawl for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/offroadoutlawsadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndwp9k</span>
+												<div class="item-header developer-name">Autonoma</div>
+												<span class="app-name">Offroad Outlaws Adder</span>
+												<span class="app-info">Offroad Outlaws Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Offroad Outlaws Adder to add gold to your balance.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/offroadoutlaws.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8pg1j</span>
+												<div class="item-header developer-name">Autonoma</div>
+												<span class="app-name">Offroad Outlaws Mod</span>
+												<span class="app-info">Offroad Outlaws Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Offroad Outlaws Mod with unlimited money, speed hack and other features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/onlyfans.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2251k</span>
+												<div class="item-header developer-name">Fenix International Limited</div>
+												<span class="app-name">OnlyFans Unlimited Access</span>
+												<span class="app-info">OnlyFans</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download OnlyFans with free unlimited access to content of any model.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/papermario.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e63kxq</span>
+												<div class="item-header developer-name">Nintendo</div>
+												<span class="app-name">Paper Mario: The Origami King</span>
+												<span class="app-info">Paper Mario: The Origami King</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Paper Mario: The Origami King mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/partyanimals.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1dwn1</span>
+												<div class="item-header developer-name">Recreate Games</div>
+												<span class="app-name">Party Animals</span>
+												<span class="app-info">Party Animals</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Party Animals mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ps2emulator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/wmnw2</span>
+												<div class="item-header developer-name">PCSX2 Team</div>
+												<span class="app-name">PCSX2 - Playstation 2 Emulator</span>
+												<span class="app-info">PCSX2</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download PCSX2 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/pkxdadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/426el1</span>
+												<div class="item-header developer-name">Afterverse Games</div>
+												<span class="app-name">PK XD Adder</span>
+												<span class="app-info">PKXD Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download PK XD Adder to add coins and gems to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/projectplaytime.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dvk26k</span>
+												<div class="item-header developer-name">MOB GAMES</div>
+												<span class="app-name">PROJECT: PLAYTIME Mobile</span>
+												<span class="app-info">PROJECT: PLAYTIME</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download PROJECT: PLAYTIME mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ps5emulator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/k95gl</span>
+												<div class="item-header developer-name">Sony Corporation</div>
+												<span class="app-name">PlayStation 5 Emulator</span>
+												<span class="app-info">PlayStation 5 Emulator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download PlayStation 5 Emulator for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/pokemongospoofer.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/x6jpml</span>
+												<div class="item-header developer-name">Niantic</div>
+												<span class="app-name">Pokémon GO Spoofer</span>
+												<span class="app-info">Pokémon GO Spoofer</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Pokémon GO Spoofer with Joystick, Teleport and other features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/pokemongoadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8d6k36</span>
+												<div class="item-header developer-name">Niantic</div>
+												<span class="app-name">Pokémon GO Adder</span>
+												<span class="app-info">Pokémon GO Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Pokémon GO Adder to add pokecoins to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/pokemonlegendsarceus.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndpggv</span>
+												<div class="item-header developer-name">Game Freak</div>
+												<span class="app-name">Pokémon Legends: Arceus</span>
+												<span class="app-info">Pokémon Legends: Arceus Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Pokémon Legends: Arceus mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/poppyplaytime.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2legrl</span>
+												<div class="item-header developer-name">MOB Games</div>
+												<span class="app-name">Poppy Playtime</span>
+												<span class="app-info">Poppy Playtime</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Poppy Playtime mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/poppyplaytime2.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/37gx4n</span>
+												<div class="item-header developer-name">MOB Games</div>
+												<span class="app-name">Poppy Playtime - Chapter 2</span>
+												<span class="app-info">Poppy Playtime - Chapter 2</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Poppy Playtime - Chapter 2 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/replikaaipro.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/7dkq55</span>
+												<div class="item-header developer-name">Luka, Inc.</div>
+												<span class="app-name">Replika - PRO Enabler</span>
+												<span class="app-info">Replika - PRO Enabler</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Replika - PRO Enabler to enable all features on your Replika AI app for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/residentevil8.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dvlj1o</span>
+												<div class="item-header developer-name">Capcom</div>
+												<span class="app-name">Resident Evil Village</span>
+												<span class="app-info">Resident Evil Village</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Resident Evil Village mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ridersrepublic.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lkj71g</span>
+												<div class="item-header developer-name">Ubisoft</div>
+												<span class="app-name">Riders Republic</span>
+												<span class="app-info">Riders Republic</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Riders Republic mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/robloxmodmenu.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dvvgj1</span>
+												<div class="item-header developer-name">Roblox Corporation</div>
+												<span class="app-name">Roblox Executor (Mod Menu) </span>
+												<span class="app-info">Roblox Executor</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Roblox script executor for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/rocketleaguesideswipe.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/2ld65k</span>
+												<div class="item-header developer-name">Psyonix</div>
+												<span class="app-name">Rocket League Sideswipe</span>
+												<span class="app-info">Rocket League Sideswipe</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Rocket League Sideswipe.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/rokkr.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/r77kxd</span>
+												<div class="item-header developer-name">Rokkr AG</div>
+												<span class="app-name">Rokkr</span>
+												<span class="app-info">Rokkr</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Rokkr.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/scarlet.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/j6jo2n</span>
+												<div class="item-header developer-name">MEG ENTERPRISES LLC.</div>
+												<span class="app-name">Scarlet</span>
+												<span class="app-info">Scarlet</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Scarlet for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/shein.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/vo2j69</span>
+												<div class="item-header developer-name">ROADGET BUSINESS PTE. LTD.</div>
+												<span class="app-name">Shein With $150 Coupon</span>
+												<span class="app-info">SHEIN</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Shein with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/sifu.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8d583r</span>
+												<div class="item-header developer-name">Sloclap</div>
+												<span class="app-name">Sifu Mobile</span>
+												<span class="app-info">Sifu Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Sifu mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/snapchatmod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8dvkvd</span>
+												<div class="item-header developer-name">Snap, Inc.</div>
+												<span class="app-name">Snapchat Mod</span>
+												<span class="app-info">Snapchat Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Snapchat Mod with save snaps, disable typing indicator, bypass my eyes only password and more features.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/snapchatscoreadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/8d1pwk</span>
+												<div class="item-header developer-name">Snap, Inc.</div>
+												<span class="app-name">Snapchat Score Adder</span>
+												<span class="app-info">Snapchat Score Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Snapchat Score Adder that increases your snapscore.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/spidermanmilesmorales.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/mgk2n</span>
+												<div class="item-header developer-name">Sony Interactive Entertainment</div>
+												<span class="app-name">Spider-Man: Miles Morales</span>
+												<span class="app-info">Spider-Man: Miles Morales Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Spider-Man: Miles Morales mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/stardewvalleymod.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1o97wx</span>
+												<div class="item-header developer-name">Nexus Mods</div>
+												<span class="app-name">Stardew Valley Mod Installer</span>
+												<span class="app-info">Stardew Valley Mods</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Stardew Valley Mod Installer for iOS/Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/stray.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/7doeln</span>
+												<div class="item-header developer-name">BlueTwelve Studio</div>
+												<span class="app-name">Stray Mobile</span>
+												<span class="app-info">Stray Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Stray mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/straykeygenerator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/426de1</span>
+												<div class="item-header developer-name">BlueTwelve Studio</div>
+												<span class="app-name">Stray PC Key Generator</span>
+												<span class="app-info">Stray PC Key Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Stray game key generator.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/stumbleguysadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6dqxwj</span>
+												<div class="item-header developer-name">Kitka Games</div>
+												<span class="app-name">Stumble Guys Adder</span>
+												<span class="app-info">Stumble Guys Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Stumble Guys Adder to add stumble tokens and gems to your account.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/subwaysurfers.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndw179</span>
+												<div class="item-header developer-name">Sybo Games ApS</div>
+												<span class="app-name">Subway Surfers Mod</span>
+												<span class="app-info">Subway Surfers Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Subway Surfers Mod with unlimited coins and keys.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tachiyomi.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lk5qng</span>
+												<div class="item-header developer-name">Javier Tomás</div>
+												<span class="app-name">Tachiyomi for iOS</span>
+												<span class="app-info">Tachiyomi</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download free and open source manga reader for iOS.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/temu.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/nd9964</span>
+												<div class="item-header developer-name">Temu</div>
+												<span class="app-name">Temu With $150 Coupon</span>
+												<span class="app-info">Temu</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Temu with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tentaclelocker.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/dv7jlk</span>
+												<div class="item-header developer-name">HotPink</div>
+												<span class="app-name">Tentacle Locker</span>
+												<span class="app-info">Tentacle Locker Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Tentacle Locker mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/thelastofuspart2.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/rkonk</span>
+												<div class="item-header developer-name">Naughty Dog</div>
+												<span class="app-name">The Last of Us Part II</span>
+												<span class="app-info">The Last of Us Part II</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download The Last of Us Part II mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/trtbn.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/vo2j5g</span>
+												<div class="item-header developer-name">Kazovsky</div>
+												<span class="app-name">The Return to Bloody Nights</span>
+												<span class="app-info">TRTBN</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download TRTBN mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/sims4dlccodegenerator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/woe68m</span>
+												<div class="item-header developer-name">Maxis</div>
+												<span class="app-name">The Sims 4 DLC Code Generator</span>
+												<span class="app-info">Sims 4 DLC Code Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Sims 4 DLC code generator for all stuff, game and expansion packs.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/sims4.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o69w9n</span>
+												<div class="item-header developer-name">Maxis</div>
+												<span class="app-name">The Sims 4 Mobile</span>
+												<span class="app-info">Sims 4 Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Sims 4 mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/sims4keygenerator.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndpw5v</span>
+												<div class="item-header developer-name">Maxis</div>
+												<span class="app-name">The Sims 4 PC Key Generator</span>
+												<span class="app-info">Sims 4 PC Key Generator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Sims 4 game key generator.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/witcher3wildhunt.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/llklg</span>
+												<div class="item-header developer-name">CD PROJEKT RED</div>
+												<span class="app-name">The Witcher 3: Wild Hunt</span>
+												<span class="app-info">The Witcher 3</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download The Witcher 3: Wild Hunt mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tiktokcoinsadder.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/42glrj</span>
+												<div class="item-header developer-name">TikTok Ltd.</div>
+												<span class="app-name">TikTok Coins Adder</span>
+												<span class="app-info">TikTok Coins Adder</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download TikTok Coins Adder to add coins to your balance.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifeworld.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/krqqq</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life World Mod</span>
+												<span class="app-info">Toca Life World Mod</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life World Mod with all places and furniture unlocked.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifeafterschool.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/o69n6d</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: After School</span>
+												<span class="app-info">Toca Life: After School</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: After School for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifecity.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/mewrew</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: City</span>
+												<span class="app-info">Toca Life: City</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: City for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifefarm.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/1ogeop</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Farm</span>
+												<span class="app-info">Toca Life: Farm</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Farm for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifehospital.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/r7g27k</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Hospital</span>
+												<span class="app-info">Toca Life: Hospital</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Hospital for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifeneighborhood.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/nd5kd9</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Neighborhood</span>
+												<span class="app-info">Toca Life: Neighborhood</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Neighborhood for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifeoffice.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/voglox</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Office</span>
+												<span class="app-info">Toca Life: Office</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Office for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifepets.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e6jq6q</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Pets</span>
+												<span class="app-info">Toca Life: Pets</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Pets for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifeschool.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/x6gwpv</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: School</span>
+												<span class="app-info">Toca Life: School</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: School for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifestable.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/994gvv</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Stable</span>
+												<span class="app-info">Toca Life: Stable</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Stable for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifetown.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6dmwnj</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Town</span>
+												<span class="app-info">Toca Life: Town</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Town for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/tocalifevacation.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g69pr1</span>
+												<div class="item-header developer-name">Toca Boca AB</div>
+												<span class="app-name">Toca Life: Vacation</span>
+												<span class="app-info">Toca Life: Vacation</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Toca Life: Vacation for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/trollstore.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/g6v7n2</span>
+												<div class="item-header developer-name">opa334</div>
+												<span class="app-name">TrollStore</span>
+												<span class="app-info">TrollStore</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download TrollStore for all iOS versions.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ubereats.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://applibrary.org/cl/i/r63el</span>
+												<div class="item-header developer-name">Uber Technologies Inc</div>
+												<span class="app-name">Uber Eats With $150 Coupon</span>
+												<span class="app-info">Uber Eats</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Uber Eats with free $150 coupon for future orders.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/ultimatecustomnight.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/r7pwwg</span>
+												<div class="item-header developer-name">Clickteam, LLC</div>
+												<span class="app-name">Ultimate Custom Night</span>
+												<span class="app-info">Ultimate Custom Night</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Ultimate Custom Night for free.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/watchedapp.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/e29lk</span>
+												<div class="item-header developer-name">WATCHED AG</div>
+												<span class="app-name">Watched App</span>
+												<span class="app-info">Watched App</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Watched App with premium subscribtion pre-installed.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/whatsapp.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/nn5m9</span>
+												<div class="item-header developer-name">WhatsApp Inc.</div>
+												<span class="app-name">WhatsApp (DNS hotfixed)</span>
+												<span class="app-info">WhatsApp</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download WhatsApp that works during the outage.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/xboxseriesxemu.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/6qqn8</span>
+												<div class="item-header developer-name">Microsoft</div>
+												<span class="app-name">Xbox Series X Emulator</span>
+												<span class="app-info">Xbox Series X Emulator</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Xbox Series X Emulator for iOS and Android devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/vancedios.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/lkd2vw</span>
+												<div class="item-header developer-name">Vanced Official</div>
+												<span class="app-name">YouTube Vanced iOS</span>
+												<span class="app-info">YouTube Vanced</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download YouTube Vanced for iOS devices.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+								<li class="">
+									<a href="#" class="external item-link item-content " data-abc="true">
+										<div class="item-media"><img src="images/yugiohmasterduel.jpg" id="appimag" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+										<div class="item-inner ">
+											<div class="item-title">
+												<span class="locker-link">https://aplbr.org/cl/i/ndpgx9</span>
+												<div class="item-header developer-name">Konami Digital Entertainment</div>
+												<span class="app-name">Yu-Gi-Oh! Master Duel</span>
+												<span class="app-info">Yu-Gi-Oh! Master Duel Mobile</span>
+												<span class="required-text">Download needed</span>
+												<span class="download-text">Device check</span>
+												<div class="item-footer description">Click to download Yu-Gi-Oh! Master Duel mobile.</div>
+											</div>
+											<div class="item-after"></div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/framework7.min.js"></script>
+	<script src="js/sideload.js"></script>
+
+
+</body></html>
